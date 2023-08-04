@@ -56,7 +56,7 @@ export class Libp2pNode<T extends ServiceMap = Record<string, unknown>> extends 
 
   constructor (init: Libp2pInit<T>) {
     super()
-
+    return
     // event bus - components can listen to this emitter to be notified of system events
     // and also cause them to be emitted
     const events = new EventEmitter<Libp2pEvents>()
